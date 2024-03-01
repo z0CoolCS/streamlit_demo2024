@@ -8,7 +8,11 @@ st.markdown('# Welcome to my app')
 
 line = st.slider('Selecciona valor', 0, 10, 3)
 
-line2 = st.slider('Selecciona valor', 0, 10, 3)
+if st.button('click me'):
+    # print is visible in the server output, not in the page
+    print('button clicked!')
+    st.write('I was clicked 🎉')
+    st.write('Further clicks are not visible but are executed')
 
 def get_data():
     return pd.DataFrame(
