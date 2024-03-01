@@ -8,6 +8,8 @@ st.markdown('# Welcome to my app')
 
 line = st.slider('Selecciona valor', 0, 10, 3)
 
+line2 = st.slider('Selecciona valor', 0, 10, 3)
+
 def get_data():
     return pd.DataFrame(
             np.random.randn(3, 3),
